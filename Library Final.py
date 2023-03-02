@@ -475,7 +475,7 @@ def deleteusers():
 def connectdb():
     global con,cur
     #Enter your username and password of MySQL
-    con=p.connect(host="localhost",user="root",passwd="abcd1234")
+    con=p.connect(host="localhost",user="root",passwd="")
     cur=con.cursor()
     cur.execute('CREATE DATABASE IF NOT EXISTS Library')
     cur.execute('USE Library')
